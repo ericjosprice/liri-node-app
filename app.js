@@ -105,41 +105,6 @@ function fileSystem(input) {
 
 // ============functions =================================
 
-
-
-
-// Make it so liri.js can take in one of the following commands:
-
-
-//////////////////////
-// 1. concert-this////
-//////////////////////                  
-// Prompt the user to provide artist information.
-// inquirer.prompt([{
-//         type: "list",
-//         name: "doingWhat",
-//         message: "LIRI will search Spotify for songs, Bands in Town for concerts, and OMDB for movies. Which one would you like assistance with?",
-//         choices: ["concert-this", "spotify-this-song", "movie-this", "do-what-it-says"]
-//     },
-//     {
-//         type: "input",
-//         name: "artist",
-//         message: "Which artist would you like to lookup?"
-//     },
-//     {
-//         type: "input",
-//         name: "film",
-//         message: "Which movie title would you like to lookup?"
-//     },
-//     {
-//         type: "input",
-//         name: "spotify",
-//         message: "Which track name would you like to lookup on spotify?"
-//     },
-
-//     // After the prompt, store the user's response in a variable called bands.
-// ]).then(function (selection) {
-// if (selection.doingWhat === "concert-this") {
 if (liriAssist === "concert-this") {
     bandsInTown(input);
 } else if (liriAssist === "spotify-this-song") {
